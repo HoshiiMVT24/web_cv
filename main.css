@@ -1,0 +1,7 @@
+#main-menu {
+    padding: 0;
+  }
+#main-menu li {
+    display: inline;
+    justify-content: space-between;
+}
