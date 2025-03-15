@@ -1,7 +1,90 @@
+@font-face {
+  font-family: 'Lato-regular';
+  src: url('Font/Lato-Regular.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
+}
+
+@font-face {
+  font-family: 'Lato-black';
+  src: url('Font/Lato-Black.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
+}
+
+@font-face {
+  font-family: 'Lato-hairline';
+  src: url('Font/Lato-Thin.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
+}
 #main-menu {
     padding: 0;
   }
 #main-menu li {
-    display: inline;
-    justify-content: space-between;
+  display: inline;
+}
+#main-menu li a {
+  font-family: lato-hairline;
+  font-size: 45px;
+  text-decoration: none;
+  float: left;
+  padding: 10px;
+  background-color: #75007b;
+  color: #fff;
+}
+
+#main-menu li a:hover {
+  font-family: lato-regular;
+  background-color: #cf0091;
+  margin-top: -2;
+  padding-bottom: 12px;
+}
+
+h1 {
+  font-family: Lato-black;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+#slogan {
+  font-family: lato-hairline;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+#portada{
+  display: flex;
+  justify-content: center;
+}
+body {
+  background-color: #420027;
+  color: #fff;
+  font-family: Lato-regular;
+}
+
+h2 {
+  font-family: lato;
+}
+.aboutme {
+  background-color: #300033;
+}
+
+.aboutme h2 {
+  font-family: lato-black;
+  font-size: 70px;
+  margin-bottom: 0px; /* Ajusta el valor según sea necesario */
+}
+
+.aboutme h5{
+  font-size: 40px;
+}
+
+#in_me {
+  display: flex;
+  align-items:start; /* Alinea verticalmente los elementos */
+  gap: 20px; /* Espacio entre la imagen y el texto */
+  background-color: #300033;
+}
+#in_me #foto {
+  justify-content: center;
+}
+
+#in_me p{
+  margin: 0; /* Elimina márgenes adicionales del párrafo */
+  font-size: 50px;
 }
