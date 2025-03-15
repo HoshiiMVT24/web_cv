@@ -62,6 +62,7 @@ h1 {
 #portada{
   display: flex;
   justify-content: center;
+  margin-bottom: 90px;
 }
 body {
   background-image: url('fondo.png');
@@ -73,35 +74,33 @@ body {
   font-family: Lato-regular;
 }
 
-h2 {
-  font-family: lato;
-}
 .aboutme {
   background-color:rgba(48, 0, 51, 0.8) ;
 }
 
 .aboutme h2 {
   font-family: lato-black;
-  font-size: 70px;
-  margin-bottom: 0px; /* Ajusta el valor según sea necesario */
-}
-
-.aboutme h5{
-  font-size: 40px;
+  font-size: 200px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 100px;
 }
 
 #in_me {
   display: flex;
   align-items:center; /* Alinea verticalmente los elementos */
-  gap: 20px; /* Espacio entre la imagen y el texto */
+  gap: 40px; /* Espacio entre la imagen y el texto */
 }
 #in_me #foto {
   justify-content: center;
-  margin-right: 400px;
+  margin-right: 200px;
+  margin-bottom: 70px;
+  margin-top: 0px;
 }
 
 #in_me p{
   font-family: lato-light;
   margin: 0; /* Elimina márgenes adicionales del párrafo */
   font-size: 80px;
+  line-height: 1.5;
 }
