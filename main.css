@@ -12,8 +12,18 @@
   font-family: 'Lato-hairline';
   src: url('Font/Lato-Thin.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
 }
+@font-face {
+  font-family: 'Lato-light';
+  src: url('Font/Lato-Light.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
+}
 #main-menu {
     padding: 0;
+    position: fixed;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: #ee00fb7f; /* Color de fondo del nav */
+    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+    padding: 10px 0; /* Espaciado interno vertical */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Opcional: agrega una sombra para destacar el nav */
   }
 #main-menu li {
   display: inline;
@@ -24,7 +34,6 @@
   text-decoration: none;
   float: left;
   padding: 10px;
-  background-color: #75007b;
   color: #fff;
 }
 
@@ -36,14 +45,17 @@
 }
 
 h1 {
+  margin-top: 150px;
+  margin-bottom: 10px;
   font-family: Lato-black;
-  font-size: 60px;
+  font-size: 150px;
   display: flex;
   justify-content: center;
 }
 #slogan {
   font-family: lato-hairline;
-  font-size: 30px;
+  font-size: 80px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
@@ -52,7 +64,11 @@ h1 {
   justify-content: center;
 }
 body {
-  background-color: #420027;
+  background-image: url('fondo.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
   font-family: Lato-regular;
 }
@@ -61,7 +77,7 @@ h2 {
   font-family: lato;
 }
 .aboutme {
-  background-color: #300033;
+  background-color:rgba(48, 0, 51, 0.8) ;
 }
 
 .aboutme h2 {
@@ -76,15 +92,16 @@ h2 {
 
 #in_me {
   display: flex;
-  align-items:start; /* Alinea verticalmente los elementos */
+  align-items:center; /* Alinea verticalmente los elementos */
   gap: 20px; /* Espacio entre la imagen y el texto */
-  background-color: #300033;
 }
 #in_me #foto {
   justify-content: center;
+  margin-right: 400px;
 }
 
 #in_me p{
+  font-family: lato-light;
   margin: 0; /* Elimina márgenes adicionales del párrafo */
-  font-size: 50px;
+  font-size: 80px;
 }
