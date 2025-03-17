@@ -17,11 +17,14 @@
   src: url('Font/Lato-Light.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
 }
 #main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     position: fixed;
     width: 100%; /* Ocupa todo el ancho de la pantalla */
     background-color: #ee00fb7f; /* Color de fondo del nav */
-    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+    z-index: 900; /* Asegura que el nav esté por encima de otros elementos */
     padding: 10px 0; /* Espaciado interno vertical */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Opcional: agrega una sombra para destacar el nav */
   }
@@ -30,7 +33,7 @@
 }
 #main-menu li a {
   font-family: lato-hairline;
-  font-size: 45px;
+  font-size: 30px;
   text-decoration: none;
   float: left;
   padding: 10px;
@@ -48,13 +51,13 @@ h1 {
   margin-top: 150px;
   margin-bottom: 10px;
   font-family: Lato-black;
-  font-size: 150px;
+  font-size: 120px;
   display: flex;
   justify-content: center;
 }
 #slogan {
   font-family: lato-hairline;
-  font-size: 80px;
+  font-size: 60px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -63,6 +66,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-bottom: 90px;
+  
 }
 body {
   background-image: url('fondo.png');
@@ -75,12 +79,14 @@ body {
 }
 
 .aboutme {
+  width: 100%;
   background-color:rgba(48, 0, 51, 0.8) ;
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
 }
 
 .aboutme h2 {
   font-family: lato-black;
-  font-size: 200px;
+  font-size: 90px;
   margin-top: 10px;
   margin-bottom: 0px;
   margin-left: 100px;
@@ -93,7 +99,7 @@ body {
 }
 #in_me #foto {
   justify-content: center;
-  margin-right: 200px;
+  margin-right: 100px;
   margin-bottom: 70px;
   margin-top: 0px;
 }
@@ -101,6 +107,20 @@ body {
 #in_me p{
   font-family: lato-light;
   margin: 0; /* Elimina márgenes adicionales del párrafo */
-  font-size: 80px;
+  font-size: 40px;
   line-height: 1.5;
+}
+
+.areas p{
+  display: flex;
+  justify-content: center;
+  font-family: lato-regular;
+  font-size: 25px;
+}
+
+#zones{
+  display: flex;
+  display: inline;
+  justify-content: center;
+  margin-top: 50px;
 }
