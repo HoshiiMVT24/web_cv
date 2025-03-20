@@ -110,17 +110,35 @@ body {
   font-size: 40px;
   line-height: 1.5;
 }
-
-.areas p{
-  display: flex;
-  justify-content: center;
-  font-family: lato-regular;
-  font-size: 25px;
+#modelado{
+  background-color: #ff046453;
+  gap: 20px;
+}
+.contenido img {
+  align-self: flex-start;
+  width: 500px;
+  height: auto;
+  margin-right: 300px;
+  margin: 50px;
 }
 
-#zones{
+#modelado h2 {
+  font-family: lato-black;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+}
+#modelado .contenido{
   display: flex;
-  display: inline;
-  justify-content: center;
-  margin-top: 50px;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 20px;
+}
+.contenido p {
+  text-align: left;
+  font-family: lato-light;
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0;
 }
