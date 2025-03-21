@@ -16,35 +16,56 @@
   font-family: 'Lato-light';
   src: url('Font/Lato-Light.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
 }
-#main-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    position: fixed;
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    background-color: #ee00fb7f; /* Color de fondo del nav */
-    z-index: 900; /* Asegura que el nav esté por encima de otros elementos */
-    padding: 10px 0; /* Espaciado interno vertical */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Opcional: agrega una sombra para destacar el nav */
-  }
-#main-menu li {
-  display: inline;
-}
-#main-menu li a {
-  font-family: lato-hairline;
-  font-size: 30px;
-  text-decoration: none;
-  float: left;
-  padding: 10px;
-  color: #fff;
-}
 
-#main-menu li a:hover {
+
+#main-menu a {
+  color: #fff;
+  font-family: lato-light;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+#main-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0em;
+}
+#main-menu li {
+  list-style: none;
+}
+#menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+#menu .active{
+  color: rgb(215, 0, 165);
+}
+#menu a:hover{
+  background-color: rgb(255, 0, 251);
   font-family: lato-regular;
-  background-color: #cf0091;
-  margin-top: -2;
-  padding-bottom: 12px;
+  color: black;
+  transition: ease-in 0.3s;
+}
+.logo{
+  margin-top: -10px;
+  margin-left: 20px;
+}
+#welcome {
+  width: 100vw;
+  height: 100vw;
+}
+#iam{
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+}
+#welcome span{
+  font-family: lato-black;
+  color: rgb(177, 0, 180);
+}
+#welcome p{
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 h1 {
@@ -111,7 +132,6 @@ body {
   line-height: 1.5;
 }
 #modelado{
-  background-color: #ff046453;
   gap: 20px;
 }
 .contenido img {
