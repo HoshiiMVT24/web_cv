@@ -231,7 +231,7 @@ body {
   width: 90px;
   height: 50px;
 }
-
+/*INICIO DE PAGINA DE MODELADO*/
 #starting {
   width: 100vw;
   height: 40vw;
@@ -331,3 +331,4 @@ body {
   box-shadow: 1px 3px 11px -5px rgb(255, 255, 255);
   transition: ease-in 0.4s;
 }
+/*INICIO DE PAGINA DE DISEÑO GRAFICO*/

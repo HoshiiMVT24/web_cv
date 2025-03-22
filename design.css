@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Lato-regular';
+    src: url('Font/Lato-Regular.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
+  }
+  
+  @font-face {
+    font-family: 'Lato-black';
+    src: url('Font/Lato-Black.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
+  }
+  
+  @font-face {
+    font-family: 'Lato-hairline';
+    src: url('Font/Lato-Thin.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
+  }
+  @font-face {
+    font-family: 'Lato-light';
+    src: url('Font/Lato-Light.ttf') format('truetype'); /* Ruta al archivo de la tipografía */
+  }
+  
+  .start{
+    background-image: url('fondo.png');
+    background-size: 100vw 100vh;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  #main-menu a {
+    color: #fff;
+    font-family: lato-light;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  #main-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0em;
+  }
+  #main-menu li {
+    list-style: none;
+  }
+  #menu {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+  }
+  #menu .active{
+    color: rgb(215, 0, 165);
+  }
+  #menu a:hover{
+    background-color: rgb(255, 0, 251);
+    font-family: lato-regular;
+    color: black;
+    transition: ease-in 0.3s;
+  }
+  .logo{
+    margin-top: -10px;
+    margin-left: 20px;
+  }
+  #welcome {
+    width: 100vw;
+    height: 50vw;
+  }
+  #welcome span{
+    font-family: lato-black;
+    color: rgb(177, 0, 180);
+  }
+  #info {
+    margin: 0 auto;
+    width: 50vw;
+    height: 40vw;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    align-items: center;
+  }
+  #info p{
+    font-family: lato-light;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  #info img {
+    border: 7px solid rgb(215, 0, 165);
+    border-radius: 7px;
+    width: 200px;
+    height: auto;
+    padding: 5px;
+  }
+  .gotome{
+    font-family: lato-regular;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgb(215, 0, 165);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(255, 255, 255, 0.84);
+  }
+  .gotome:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: none;
+    transition: ease-in-out 0.4s;
+  }
+  .divider{
+    height: 7px;
+    width: 400px;
+    background-color: rgb(215, 0, 165);
+    margin-top: 10px;
+    margin-bottom: 3em;
+    border-radius: 4px;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-left: 50px;
+  }
+  body {
+    background-color: rgb(14, 0, 8);
+    color: #fff;
+    font-family: Lato-regular;
+  }
+
+#starting {
+    width: 100vw;
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 2em;
+  }
+  #starting span{
+    font-family: lato-black;
+    color: rgb(177, 0, 180);
+  }
+  
+  #starting img{
+    width: 80px;
+    height: 80px;
+  }
+  
+  .start_page{
+    background-image: url('modelade.png');
+    background-size: 100vw 100vh;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #info_page{
+    grid-column: 2/5;
+  }
+  
+  #info_page p{
+    font-family: lato-light;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  .status h2{
+    color: rgb(213, 170, 0);
+  }
+  #info_page img{
+    width: 60px;
+  }
+  
+  .status{
+    grid-column: 6/10;
+    align-items: center;
+    margin-top: 5em;
+    text-align: center;
+  }
+  .status img{
+    width: 80px;
+  }
+  .status h2{
+    font-size: 40px;
+    margin-top: -20px;
+  }
+  
+  .status h3{
+    font-size: 35px;
+  }
+  .photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+  }
+  .photos h2{
+    font-size: 30px;
+    margin: 0px;
+  }
+  .photos img{
+    width: 30vw;
+    grid-column: 1/5;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 15px;
+    box-shadow: 1px 3px 11px -5px rgb(145, 0, 92);
+    transition: ease-in 0.4s;
+  }
+  .photos .divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin-top: 30px;
+    background-color: rgb(246, 0, 115);
+  }
+  #sections{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    margin-left: -59px;
+  }
+  
+  .photos img:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 3px 11px -5px rgb(255, 255, 255);
+    transition: ease-in 0.4s;
+  }
