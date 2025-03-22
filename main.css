@@ -24,6 +24,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 #main-menu a {
   color: #fff;
   font-family: lato-light;
@@ -233,7 +234,7 @@ body {
 
 #starting {
   width: 100vw;
-  height: 50vw;
+  height: 40vw;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   padding: 2em;
@@ -295,7 +296,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  margin-left: 70px;
 }
 .photos h2{
   font-size: 30px;
@@ -305,7 +306,7 @@ body {
   width: 30vw;
   grid-column: 1/5;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 40px;
   border-radius: 15px;
   box-shadow: 1px 3px 11px -5px rgb(145, 0, 92);
   transition: ease-in 0.4s;
